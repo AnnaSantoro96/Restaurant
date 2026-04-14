@@ -4,9 +4,16 @@ body{
 }
 
 /* CONTAINER PRINCIPALE */
-.first-container{
+.first-container, .second-container{
     display: flex;
     height: 100vh; /* tutta la schermata */
+    background-color: #F5F5F5;
+}
+
+.second-container{
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
 }
 
 /* SINISTRA */
@@ -30,6 +37,17 @@ body{
     margin-right: 20px;
     background-color: #F5F5F5;
 }
+
+.form{
+    width: 45%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* parte dall’alto */
+    margin-top: 20px;
+    background-color: #F5F5F5;
+}
+
 
 /* MENU IN ALTO A DESTRA */
 .tab-menu{
