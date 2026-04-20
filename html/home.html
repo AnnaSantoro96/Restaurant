@@ -67,10 +67,22 @@
       <p><a href="mailto:info@mysite.com">info@mysite.com</a></p> 
       </div>
 
-      <div class="form">
+      <div class="contact">
         <h2>Contact Us</h2>
-        <form>
-          
+        <form method="post" action=""> 
+          <fieldset>
+            <label for="email">
+              Enter your email:
+              <input type="email" id="email" name="email" required>
+            </label>
+
+            <label for="message">
+              Enter a message:
+              <textarea id="message" name="message" rows="3" cols="30" placeholder="Leave a message..."></textarea>
+            </label>
+
+            <input type="submit" value="Send">
+          </fieldset>
         </form>
       </div>
      </div>       
