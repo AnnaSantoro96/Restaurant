@@ -16,6 +16,10 @@ body{
     padding: 40px;
 }
 
+.first-container, .second-container {
+    min-height: 100vh;
+}
+
 /* SINISTRA */
 .left{
     width: 50%;
@@ -133,6 +137,7 @@ a:hover{
 
      .badge-cloud:hover{
         transform: scale(1.2);
+        
     }
  
     .badge-cloud span {
@@ -178,17 +183,18 @@ a:hover{
     }
 
     button{
-      color: #3A7D44;
+      background-color: #3A7D44;
+      color: white;
       font-size: 25px;
-      border-color: #3A7D44;
       border-radius: 20px;
       padding: 10px;
       font-style: italic;
+      cursor: pointer;
     }
 
     button:hover{
-      color:white;
-      background-color:#3A7D44;
+      color:#3A7D44;
+      background-color:white;
     }
 
     h1{
@@ -205,11 +211,8 @@ a:hover{
     }
 
     .contact{
-    width: 60vw;
-    max-width: 500px;
-    max-height: 300px;
-    padding-bottom: 2em;
-    margin-bottom: 30px;
+    margin: 30px auto;
+    padding: 20px auto;
 }
 
 fieldset{
@@ -233,7 +236,7 @@ input, select, textarea{
     min-height: 2em;
 }
 
-input, textarea:focus{
+input:focus, textarea:focus{
   border: 2px solid #3A7D44;
   outline: none;
 }
@@ -248,7 +251,28 @@ input[type=submit]{
   border-color: #3A7D44;
   min-width: 300px;
   color:whitesmoke;
+  border-radius: 20px;
+
 }
 
+input[type=submit]:hover{
+  background-color: #F5F5F5;
+  color: #3A7D44;
+}
+
+@media (max-width: 768px) {
+  .first-container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .tab-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 
