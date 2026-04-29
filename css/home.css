@@ -8,6 +8,19 @@ body{
     display: flex;
     height: 100vh; /* tutta la schermata */
     background-color: #F5F5F5;
+<<<<<<< HEAD
+=======
+}
+
+.second-container{
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.first-container, .second-container {
+    min-height: 100vh;
+>>>>>>> 433a8b6277b6acd7f980e2e802affb201550c43b
 }
 
 /* SINISTRA */
@@ -32,6 +45,7 @@ body{
     background-color: #F5F5F5;
 }
 
+<<<<<<< HEAD
 .contact{
   display: flex;
   flex-direction: column;
@@ -40,6 +54,19 @@ body{
   margin-right: 40px;
 }
 
+=======
+.form{
+    width: 45%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* parte dall’alto */
+    margin-top: 80px;
+    background-color: #F5F5F5;
+}
+
+
+>>>>>>> 433a8b6277b6acd7f980e2e802affb201550c43b
 /* MENU IN ALTO A DESTRA */
 .tab-menu{
     display: flex;
@@ -124,6 +151,7 @@ a:hover{
 
      .badge-cloud:hover{
         transform: scale(1.2);
+        
     }
  
     .badge-cloud span {
@@ -169,17 +197,18 @@ a:hover{
     }
 
     button{
-      color: #3A7D44;
+      background-color: #3A7D44;
+      color: white;
       font-size: 25px;
-      border-color: #3A7D44;
       border-radius: 20px;
       padding: 10px;
       font-style: italic;
+      cursor: pointer;
     }
 
     button:hover{
-      color:white;
-      background-color:#3A7D44;
+      color:#3A7D44;
+      background-color:white;
     }
 
     h1{
@@ -195,4 +224,69 @@ a:hover{
       margin-top: 20px;
     }
 
-  
+    .contact{
+    margin: 30px auto;
+    padding: 20px auto;
+}
+
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, select, textarea{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input:focus, textarea:focus{
+  border: 2px solid #3A7D44;
+  outline: none;
+}
+
+input[type=submit]{
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3A7D44;
+  border-color: #3A7D44;
+  min-width: 300px;
+  color:whitesmoke;
+  border-radius: 20px;
+
+}
+
+input[type=submit]:hover{
+  background-color: #F5F5F5;
+  color: #3A7D44;
+}
+
+@media (max-width: 768px) {
+  .first-container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .tab-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
